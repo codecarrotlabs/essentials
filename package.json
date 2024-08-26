@@ -6,6 +6,10 @@
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsup"
   },
+  "source": "./src/index.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -15,36 +19,6 @@
       "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
-      }
-    },
-    "./ts": {
-      "import": {
-        "types": "./dist/ts/index.d.mts",
-        "default": "./dist/ts/index.mjs"
-      },
-      "require": {
-        "types": "./dist/ts/index.d.ts",
-        "default": "./dist/ts/index.js"
-      }
-    },
-    "./css": {
-      "import": {
-        "types": "./dist/css/index.d.mts",
-        "default": "./dist/css/index.mjs"
-      },
-      "require": {
-        "types": "./dist/css/index.d.ts",
-        "default": "./dist/css/index.js"
-      }
-    },
-    "./react": {
-      "import": {
-        "types": "./dist/react/index.d.mts",
-        "default": "./dist/react/index.mjs"
-      },
-      "require": {
-        "types": "./dist/react/index.d.ts",
-        "default": "./dist/react/index.js"
       }
     }
   },
