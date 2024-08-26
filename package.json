@@ -1,0 +1,59 @@
+{
+  "name": "@codecarrot/essentials",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsup"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./ts": {
+      "import": {
+        "types": "./dist/ts/index.d.mts",
+        "default": "./dist/ts/index.mjs"
+      },
+      "require": {
+        "types": "./dist/ts/index.d.ts",
+        "default": "./dist/ts/index.js"
+      }
+    },
+    "./css": {
+      "import": {
+        "types": "./dist/css/index.d.mts",
+        "default": "./dist/css/index.mjs"
+      },
+      "require": {
+        "types": "./dist/css/index.d.ts",
+        "default": "./dist/css/index.js"
+      }
+    }
+  },
+  "keywords": ["utils", "codecarrot"],
+  "author": {
+    "email": "opensource@codecarrot.net",
+    "name": "CodeCarrot"
+  },
+  "license": "All Rights Resversed",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/react": "^18.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
