@@ -38,6 +38,11 @@
       }
     }
   },
+  "files": [
+		"./dist",
+		"./package.json",
+    "./tsconfig.json"
+	],
   "keywords": ["utils", "codecarrot"],
   "author": {
     "email": "opensource@codecarrot.net",
