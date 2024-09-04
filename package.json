@@ -1,12 +1,15 @@
 {
   "name": "@codecarrot/essentials",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsup"
   },
+  "source": "./src/index.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -17,28 +20,13 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       }
-    },
-    "./ts": {
-      "import": {
-        "types": "./dist/ts/index.d.mts",
-        "default": "./dist/ts/index.mjs"
-      },
-      "require": {
-        "types": "./dist/ts/index.d.ts",
-        "default": "./dist/ts/index.js"
-      }
-    },
-    "./css": {
-      "import": {
-        "types": "./dist/css/index.d.mts",
-        "default": "./dist/css/index.mjs"
-      },
-      "require": {
-        "types": "./dist/css/index.d.ts",
-        "default": "./dist/css/index.js"
-      }
     }
   },
+  "files": [
+		"./dist",
+		"./package.json",
+    "./tsconfig.json"
+	],
   "keywords": ["utils", "codecarrot"],
   "author": {
     "email": "opensource@codecarrot.net",
@@ -47,7 +35,6 @@
   "license": "All Rights Resversed",
   "dependencies": {
     "clsx": "^2.1.1",
-    "react": "^18.3.1",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
@@ -55,5 +42,8 @@
     "@types/react": "^18.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
-  }
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  } 
 }
