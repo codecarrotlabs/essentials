@@ -27,6 +27,9 @@
 		"./package.json",
     "./tsconfig.json"
 	],
+  "repository": {
+    "url": "https://github.com/codecarrotlabs/essentials"
+  },
   "keywords": ["utils", "codecarrot"],
   "author": {
     "email": "opensource@codecarrot.net",
