@@ -41,7 +41,7 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
+    "@biomejs/biome": "1.9.4",
     "@types/react": "^18.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
