@@ -15,8 +15,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
       tailwind-merge:
-        specifier: ^2.5.2
-        version: 2.6.0
+        specifier: ^3.0.0
+        version: 3.0.1
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -629,8 +629,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+  tailwind-merge@3.0.1:
+    resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
 
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -1154,7 +1154,7 @@ snapshots:
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
 
-  tailwind-merge@2.6.0: {}
+  tailwind-merge@3.0.1: {}
 
   thenify-all@1.6.0:
     dependencies:
