@@ -30,7 +30,7 @@ jobs:
           pnpm build
 
       - name: Cache 'dist' directory
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         id: cache-build
         with:
           path: |
@@ -59,7 +59,7 @@ jobs:
           version: 9.6.0
 
       - name: Cache 'dist' directory
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         id: cache-build
         with:
           path: |
